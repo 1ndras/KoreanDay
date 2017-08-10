@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#476fa7</color>
+    <color name="colorAccent">#2775ea</color>
+    <color name="colorBackground">#34ff45</color>
+    <color name="transparan">#04ffffff</color>
+    <color name="hitam">#000000</color>
+    <color name="pias">#20696666</color>
+    <color name="abang">#008cff</color>
+</resources>

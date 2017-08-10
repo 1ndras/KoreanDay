@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">KoreanDay</string>
+
+    <color name="ungu">#9C27B0</color>
+    <color name="silver" color="">#9E9E9E</color>
+    <color name="putih">#ffffff</color>
+
+
+    <!-- Recource untuk layout Menu -->
+    <string name="login">Masuk</string>
+    <string name="info">Info Aplikasi</string>
+    <string name="exit">Keluar</string>
+
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="16dp"
+                android:background="@drawable/backgroundd"
+                tools:context="com.example.indra_act.koreanday.Profil">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/TextView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Selamat Datang"
+            android:textSize="30dip"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/View1"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:background="#448AFF" />
+
+        <TextView
+            android:id="@+id/txt_id"
+            android:layout_width="63dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:text="ID" />
+
+        <TextView
+            android:id="@+id/txt_username"
+            android:layout_width="157dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:text="Nama Anda"
+            android:layout_weight="0.16" />
+
+        <Button
+            android:id="@+id/btn_menugrid"
+            android:layout_width="132dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:text="Masuk Konten"
+            android:background="#448AFF"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:layout_weight="0.35" />
+
+        <Button
+            android:id="@+id/btn_logout"
+            android:layout_width="116dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="#00555555"
+            android:text="Keluar"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</RelativeLayout>
