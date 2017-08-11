@@ -29,48 +29,62 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:theme="@style/NoActionBar" />
+            android:theme="@style/AppTheme" />
         <activity
             android:name=".MenuGrid"
             android:parentActivityName=".Profil"
-            android:theme="@style/NoActionBar">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".Profil" />
-        </activity>
-        <activity
-            android:name=".Login"
-            android:theme="@style/NoActionBar" />
-        <activity
-            android:name=".About"
-            android:theme="@style/NoActionBar" />
-        <activity
-            android:name=".Profil"
-            android:theme="@style/NoActionBar" />
+            android:theme="@style/AppTheme"/>
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".Profil" />
+
+
+    <activity
+        android:name=".Login"
+        android:label="Login" />
+    <activity
+        android:name=".About"
+        android:label="Info" />
+    <activity
+        android:name=".Profil"
+        android:label="Profil" />
+    <activity
+        android:name=".Number"
+        android:label="Nomor" />
+    <activity
+        android:name=".Conversation"
+        android:label="Dialog Sehari-hari" />
+    <activity
+        android:name=".Kuis"
+        android:label="Kuis" />
+    <activity
+        android:name=".Listening"
+        android:label="Listening" />
+    <activity
+        android:name=".Contact"
+        android:label="Kontk Person" />
+    <activity
+        android:name=".Vokal"
+        android:label="Huruf Vokal" />
+
         <activity
             android:name=".vokal.VokalDasar"
-            android:theme="@style/NoActionBar" />
+            android:label="Vokal Dasar" />
+
+        <activity
+            android:name=".vokal.VokalRangkap"
+            android:label="Vokal Rangkap" />
+
+    <activity
+        android:name=".Konsonan"
+        android:label="Huruf Konsonan" />
+
         <activity
             android:name=".konsonan.KonsonanDasar"
-            android:theme="@style/NoActionBar" />
-        <activity
-            android:name=".Number"
-            android:theme="@style/NoActionBar" />
-        <activity
-            android:name=".Conversation"
-            android:theme="@style/NoActionBar" />
-        <activity
-            android:name=".Kuis"
-            android:theme="@style/NoActionBar" />
-        <activity
-            android:name=".Listening"
-            android:theme="@style/NoActionBar" />
-        <activity
-            android:name=".Contact"
-            android:theme="@style/NoActionBar" />
-        <activity android:name=".Vokal" />
-        <activity android:name=".Konsonan" />
-        <activity android:name=".vokal.VokalRangkap" />
-    </application>
+            android:label="Konsonan Dasar" />
 
+        <activity
+            android:name=".konsonan.KonsonanRangkap"
+            android:label="Konsonan Rangkap" />
+</application>
 </manifest>
