@@ -62,7 +62,7 @@
         android:label="Listening" />
     <activity
         android:name=".Contact"
-        android:label="Kontk Person" />
+        android:theme="@style/NoActionBar"/>
     <activity
         android:name=".Vokal"
         android:label="Huruf Vokal" />

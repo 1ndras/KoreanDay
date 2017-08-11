@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.ImageButton;
 
 import com.example.indra_act.koreanday.konsonan.KonsonanDasar;
+import com.example.indra_act.koreanday.konsonan.KonsonanRangkap;
 import com.example.indra_act.koreanday.vokal.VokalDasar;
 
 public class Konsonan extends AppCompatActivity {
@@ -31,7 +32,7 @@ public class Konsonan extends AppCompatActivity {
         ImageButton btn2 = (ImageButton) findViewById(R.id.konsonanrangkap);
         btn2.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent i = (new Intent(Konsonan.this, Vokal.class));
+                Intent i = (new Intent(Konsonan.this, KonsonanRangkap.class));
                 startActivity(i);
                 this.finish();
             }
