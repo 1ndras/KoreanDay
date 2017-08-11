@@ -29,9 +29,11 @@
         </activity>
         <activity
             android:name=".MainActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme" />
         <activity
             android:name=".MenuGrid"
+            android:screenOrientation="portrait"
             android:parentActivityName=".Profil"
             android:theme="@style/AppTheme"/>
         <meta-data
@@ -41,50 +43,64 @@
 
     <activity
         android:name=".Login"
+        android:screenOrientation="portrait"
         android:label="Login" />
     <activity
         android:name=".About"
+        android:screenOrientation="portrait"
         android:label="Info" />
     <activity
         android:name=".Profil"
+        android:screenOrientation="portrait"
         android:label="Profil" />
     <activity
         android:name=".Number"
+        android:screenOrientation="portrait"
         android:label="Nomor" />
     <activity
         android:name=".Conversation"
+        android:screenOrientation="portrait"
         android:label="Dialog Sehari-hari" />
     <activity
         android:name=".Kuis"
+        android:screenOrientation="portrait"
         android:label="Kuis" />
     <activity
         android:name=".Listening"
+        android:screenOrientation="portrait"
         android:label="Listening" />
     <activity
         android:name=".Contact"
+        android:screenOrientation="portrait"
         android:theme="@style/NoActionBar"/>
     <activity
         android:name=".Vokal"
+        android:screenOrientation="portrait"
         android:label="Huruf Vokal" />
 
         <activity
             android:name=".vokal.VokalDasar"
+            android:screenOrientation="portrait"
             android:label="Vokal Dasar" />
 
         <activity
             android:name=".vokal.VokalRangkap"
+            android:screenOrientation="portrait"
             android:label="Vokal Rangkap" />
 
     <activity
         android:name=".Konsonan"
+        android:screenOrientation="portrait"
         android:label="Huruf Konsonan" />
 
         <activity
             android:name=".konsonan.KonsonanDasar"
+            android:screenOrientation="portrait"
             android:label="Konsonan Dasar" />
 
         <activity
             android:name=".konsonan.KonsonanRangkap"
+            android:screenOrientation="portrait"
             android:label="Konsonan Rangkap" />
 </application>
 </manifest>
