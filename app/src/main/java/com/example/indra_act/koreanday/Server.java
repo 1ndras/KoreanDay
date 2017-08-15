@@ -1,7 +1,7 @@
 package com.example.indra_act.koreanday;
 
 /**
- * Created by KUNCORO on 24/03/2017.
+ * Created by Kelompok2
  */
 
 public class Server {
