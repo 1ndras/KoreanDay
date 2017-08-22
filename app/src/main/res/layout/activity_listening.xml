@@ -1,48 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:weightSum="3"
+    android:orientation="vertical"
     android:background="@drawable/backgroundd"
-    tools:context=".Listening">
+    tools:context=".cbt.Listening">
 
 
     <TextView
+        android:layout_weight="0.57"
+        android:textSize="50dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@+id/ViewWaktuListening"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ef0303"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:layout_weight="0.10"
+        android:gravity="center"
         android:id="@+id/textView"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="59dp"
         android:text="Listening LPBK SEOUL"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
-    <Button
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="PLAY"
-        android:id="@+id/btnPLAY"
-        android:layout_marginTop="102dp"
-        android:layout_below="@+id/textView"
-        android:layout_toLeftOf="@+id/btnPAUSE"
-        android:layout_toStartOf="@+id/btnPAUSE"/>
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:weightSum="3"
+        android:layout_weight="0.30">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="STOP"
-        android:id="@+id/btnSTOP"
-        android:layout_alignTop="@+id/btnPAUSE"
-        android:layout_toRightOf="@+id/btnPAUSE"
-        android:layout_toEndOf="@+id/btnPAUSE"/>
+        <Button
+            android:layout_weight="0.30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PLAY"
+            android:id="@+id/btnPLAY"
+            android:layout_below="@+id/textView"/>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="PAUSE"
-        android:id="@+id/btnPAUSE"
-        android:layout_alignTop="@+id/btnPLAY"
-        android:layout_centerHorizontal="true"/>
+        <Button
+            android:layout_weight="0.30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="STOP"
+            android:id="@+id/btnSTOP"/>
 
-</RelativeLayout>
+        <Button
+            android:layout_weight="0.30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PAUSE"
+            android:id="@+id/btnPAUSE"
+            android:layout_centerHorizontal="true"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

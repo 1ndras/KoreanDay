@@ -64,11 +64,7 @@
     <activity
         android:name=".Kuis"
         android:screenOrientation="portrait"
-        android:label="Kuis" />
-    <activity
-        android:name=".Listening"
-        android:screenOrientation="portrait"
-        android:label="Listening" />
+        android:label="Kuis" />>
     <activity
         android:name=".Contact"
         android:screenOrientation="portrait"
@@ -102,5 +98,20 @@
             android:name=".konsonan.KonsonanRangkap"
             android:screenOrientation="portrait"
             android:label="Konsonan Rangkap" />
-</application>
+
+    <activity
+       android:name=".CBT"
+       android:screenOrientation="portrait"
+       android:label="CBT" />
+
+        <activity android:name=".cbt.SoalActivity"
+            android:screenOrientation="portrait"
+            android:label="CBT" />
+        <activity
+            android:name=".cbt.Listening"
+            android:screenOrientation="portrait"
+            android:label="Listening" />
+
+
+    </application>
 </manifest>

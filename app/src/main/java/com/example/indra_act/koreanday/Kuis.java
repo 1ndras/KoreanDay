@@ -343,7 +343,7 @@ public class Kuis extends Activity {
     };
  
     private void pasangLabelDanNomorUrut() {
-        txtno.setText("Soal ke-" + (urutanPertanyaan + 1) + " dari "
+        txtno.setText("SoalCbt ke-" + (urutanPertanyaan + 1) + " dari "
                 + listSoal.size());
     }
 }

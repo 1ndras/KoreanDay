@@ -1,13 +1,21 @@
-package com.example.indra_act.koreanday;
+package com.example.indra_act.koreanday.cbt;
 
+import android.annotation.SuppressLint;
+import android.annotation.TargetApi;
 import android.media.MediaPlayer;
 import android.media.MediaPlayer.OnCompletionListener;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
+import android.os.CountDownTimer;
+
+import com.example.indra_act.koreanday.R;
 
 import java.io.IOException;
+import java.util.concurrent.TimeUnit;
 
 public class Listening extends AppCompatActivity {
     /** Called when the activity is first created. */
@@ -16,6 +24,8 @@ public class Listening extends AppCompatActivity {
     private Button btnPause;
     private Button btnStop;
     private MediaPlayer mp;
+    TextView txtWaktu;
+    CounterClass mCountDownTimer;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -27,7 +37,8 @@ public class Listening extends AppCompatActivity {
         btnPlay = (Button) findViewById(R.id.btnPLAY);
         btnPause = (Button) findViewById(R.id.btnPAUSE);
         btnStop = (Button) findViewById(R.id.btnSTOP);
-
+        txtWaktu = (TextView) findViewById(R.id.ViewWaktuListening);
+        setUpWaktu();
         stateAwal();
 
         btnPlay.setOnClickListener(new View.OnClickListener() {
@@ -56,6 +67,41 @@ public class Listening extends AppCompatActivity {
     }
 
 
+    private void setUpWaktu() {
+        mCountDownTimer = new CounterClass(240000, 1000);
+        mCountDownTimer.start();
+    }
+
+    @SuppressLint("DefaultLocale")
+    public class CounterClass extends CountDownTimer {
+        public CounterClass(long millisInFuture, long countDownInterval) {
+            super(millisInFuture, countDownInterval);
+        }
+
+        @Override
+        public void onFinish() {
+            finish();
+        }
+
+        @SuppressLint("NewApi")
+        @TargetApi(Build.VERSION_CODES.GINGERBREAD)
+        @Override
+        public void onTick(long millisUntilFinished) {
+            long millis = millisUntilFinished;
+            String hms = String.format(
+                    "%02d:%02d:%02d",
+                    TimeUnit.MILLISECONDS.toHours(millis),
+                    TimeUnit.MILLISECONDS.toMinutes(millis)
+                            - TimeUnit.HOURS.toMinutes(TimeUnit.MILLISECONDS
+                            .toHours(millis)),
+                    TimeUnit.MILLISECONDS.toSeconds(millis)
+                            - TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS
+                            .toMinutes(millis)));
+            txtWaktu.setText(hms);
+        }
+    }
+
+
     @Override
     public void onBackPressed() {
         // TODO Auto-generated method stub
@@ -72,7 +118,7 @@ public class Listening extends AppCompatActivity {
 
     /** Dijalankan Oleh Tombol Play */
     private void play() {
-        /** Memanggil File MP3 "indonesiaraya.mp3" */
+        /** Memanggil File MP3 "lpbkseoul.mp3" */
         mp = MediaPlayer.create(this, R.raw.lpbkseoul);
 
         try {

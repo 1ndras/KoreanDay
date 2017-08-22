@@ -6,8 +6,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageButton;
 
-import com.example.indra_act.koreanday.konsonan.KonsonanDasar;
-
 public class MenuGrid extends AppCompatActivity {
 
     @Override
@@ -83,7 +81,7 @@ public class MenuGrid extends AppCompatActivity {
         ImageButton btn6 = (ImageButton) findViewById(R.id.cbt);
         btn6.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent i = (new Intent(MenuGrid.this, Listening.class));
+                Intent i = (new Intent(MenuGrid.this, CBT.class));
                 startActivity(i);
                 this.finish();
             }
