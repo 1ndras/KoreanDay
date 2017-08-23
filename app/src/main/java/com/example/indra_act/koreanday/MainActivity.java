@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
                 // TODO Auto-generated method stub
 
-                Intent a = new Intent(getApplicationContext(), Login.class);
+                Intent a = new Intent(getApplicationContext(), MenuGrid.class);
 
 
                 startActivity(a);
