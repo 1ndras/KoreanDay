@@ -18,48 +18,27 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Button btn1 = (Button) findViewById(R.id.btnstart);
-
         btn1.setOnClickListener(new View.OnClickListener() {
-
-
             public void onClick(View arg0) {
-
-                // TODO Auto-generated method stub
-
-                Intent a = new Intent(getApplicationContext(), Login.class);
-
-
+                Intent a = new Intent(getApplicationContext(), MenuGrid.class);
                 startActivity(a);
-
-
             }
-
         });
+
         Button btn2 = (Button) findViewById(R.id.btninfo);
-
         btn2.setOnClickListener(new View.OnClickListener() {
-
-
             public void onClick(View arg0) {
-
-                // TODO Auto-generated method stub
-
                 Intent i = new Intent(getApplicationContext(), About.class);
-
                 startActivity(i);
-
-
             }
-
         });
+
         Button btn3 = (Button) findViewById(R.id.btnexit);
         btn3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View arg0) {
-
                 AlertDialog.Builder alertexit = new AlertDialog.Builder(
                         MainActivity.this);
-
                 alertexit
                         .setMessage("Apakah Anda Akan Keluar Dari Aplikasi ini?")
                         .setIcon(android.R.drawable.ic_dialog_alert)

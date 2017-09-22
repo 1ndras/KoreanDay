@@ -3,6 +3,7 @@ package com.example.indra_act.koreanday;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
 
@@ -12,7 +13,7 @@ public class MenuGrid extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.menu_grid);
-
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 /*        //replace tittle to icon
         ActionBar menu = getSupportActionBar();
         menu.setDisplayShowHomeEnabled(false);
@@ -89,5 +90,17 @@ public class MenuGrid extends AppCompatActivity {
             private void finish() {
             }
         });
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+
+        if (id == android.R.id.home) {
+            onBackPressed();
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 }
